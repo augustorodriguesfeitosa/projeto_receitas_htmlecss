@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="Captura de tela 2025-04-06 232044.png" type="image/x.png" >
+    <link rel="stylesheet" href="style.css">
     <title>Coelho's Recipe</title>
     <!--<style>
       body { margin: ; font-family: Arial, sans-serif; }
@@ -15,7 +16,7 @@
       .hero { background: #999; padding: 40px 20px; color: #fff; display: flex; justify-content: space-between; align-items: center; }
       .section { padding: 40px 20px; }
       .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-      .feature, .card { background: #eef2f5; padding: 20px; border-radius: 8px; }
+      .etapas, .card { background: #eef2f5; padding: 20px; border-radius: 8px; }
       .dark-section { background: #222; color: #222; }
       footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; font-size: 14px; }
     </style>
@@ -26,98 +27,93 @@
       <nav>
         <span>Coelho's Recipe</span>
         <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Sweet</a></li>
-          <li><a href="#">Salty</a></li>
-          <li><a href="#">Sweet and sour</a></li>
+          <li><a href="#" target="_parent" rel="previous" >Menu</a></li>
+          <li><a href="#" target="_self" rel="next" >Sweet</a></li>
+          <li><a href="#" target="_self" rel="next" >Salty</a></li>
+          <li><a href="#" target="_self" rel="next">Sweet and sour</a></li>
         </ul>
       </nav>
     </header>
-  <main>
-      <section class="hero"><!--MUDA ISOOOOOOOOO-->
-        <div style="display: flex; align-items: center; padding: 10px;"> <!-----MEU DEUS STYLE INLINE-->
-            <div style="flex: 1;">
-              <h2>As delícias de páscoa <span>voltaram!</span></h2>
-              <p>
-                Nesta Páscoa, que tal inovar no cardápio e deixar a celebração ainda mais especial?<br><br>
-                Se você deseja sair da rotina, há diversas receitas criativas para surpreender a família com novos sabores e tornar o momento inesquecível!
-              </p>
-              <button style="margin-top: 10px;">Saiba mais</button> <!--TROCA POR UM AUDIO E UM SPAN COM TEMPO DE PREPARO-->
-            </div>
-            <div style="flex: 0 0 auto; margin-left: 30px;">
-              <img src="https://sivarious.com/wp-content/uploads/2023/03/mona-de-pascua.jpg" alt="Imagem de Páscoa" width="700">
-            </div>
+    <main>
+      <section id="hero"><!--MUDA ISOOOOOOOOO-->
+          <div>
+            <h2>Que tal um <span>docinho?</span></h2>
+            <p>
+              Uma receita detalhada de como fazer um bombom recheado com maracuja!
+            </p>
+            <button>Tempo de Preparo: 5 min</button> <!--TROCA POR UM AUDIO E UM SPAN COM TEMPO DE PREPARO-->
+            <audio src="" controls loop preload="auto"></audio>
           </div>
+          <picture>
+            <img src="https://sivarious.com/wp-content/uploads/2023/03/mona-de-pascua.jpg" alt="Imagem de um Bombom de Maracuja" width="500">
+          </picutre>
       </section>
-    
-      <section class="section grid">
-        <aside><img src="https://t3.ftcdn.net/jpg/02/43/89/72/360_F_243897201_XsbpMwEFnnxCklBQoWsUPCRHB1dS6E7U.jpg" alt="Image" width="100%" /></aside>
-        <article class="grid">
-    
-          <div class="feature"><h3>Bombom de travessa</h3>
-            <img src="https://th.bing.com/th/id/OIP.BX4AYP6BKeObUX24HDo_dwHaEK?rs=1&pid=ImgDetMain" alt="Image" width="100%" />
-            <a href="#">Saiba mais</a></div>
-    
-          <div class="feature"><h3>Torta de limão</h3>
-            <img src="https://th.bing.com/th/id/OIP.wkNGFEw-TU6YW5VTQwlegwHaE8?rs=1&pid=ImgDetMain" alt="Image" width="100%" />
-            <a href="#">Saiba mais</a></div>
-    
-          <div class="feature"><h3>Doce gelado de coco</h3>
-            <img src="https://receitason.com/wp-content/uploads/2022/09/bolo-de-coco-gelado.png" alt="Image" width="100%" />
-            <a href="#">Saiba mais</a></div>
-    
-          <div class="feature"><h3>Pavê de morango</h3>
-            <img src="https://th.bing.com/th/id/OIP.Wb2OOmJJXKemjq1C36UodQHaFj?rs=1&pid=ImgDetMain" alt="Image" width="100%" />
-            <a href="#">Saiba mais</a></div>
-    
-          <div class="feature"><h3>Pudim de leite condensado</h3>
-            <img src="https://th.bing.com/th/id/OIP.i4F3XsADlQbKX7GbwfmVCwHaHa?rs=1&pid=ImgDetMain" alt="Image" width="100%" />
-            <a href="#">Saiba mais</a></div>
-    
-          <div class="feature"><h3>Torta holandesa</h3>
-            <img src="https://particolaregelateria.com.br/wp-content/uploads/2024/04/tholandesapote.png" alt="Image" width="100%" />
-            <a href="#">Saiba mais</a></div>
-          </article>
-      </section>
-    
-      <section class="section" style="background: #5c6b8a; color: white; text-align: center;">
+      <section id="ingredientes">
         <h2>indefinido</h2>
-        <article class="card">
+        <article id="lista">
           <h3>indefinido</h3>
           <p>indefinido</p>
-          <a href="#" style="color: #5c6b8a;">Saiba mais</a>
         </article>
       </section>
+      <section class="preparo">
+        <aside>
+          <picture>
+            <img src="https://t3.ftcdn.net/jpg/02/43/89/72/360_F_243897201_XsbpMwEFnnxCklBQoWsUPCRHB1dS6E7U.jpg" alt="Image" width="100%" />
+          </picture>
+        </aside>
+        <article class="grid">
+          <div class="etapas">
+            <h3>Bombom de travessa</h3>
+            <picture>
+              <img src="https://th.bing.com/th/id/OIP.BX4AYP6BKeObUX24HDo_dwHaEK?rs=1&pid=ImgDetMain" alt="Image" width="100%" />
+            </picture>
+          </div>
     
-      <section class="section dark-section">
+          <div class="etapas">
+            <h3>Torta de limão</h3>
+            <picture><img src="https://th.bing.com/th/id/OIP.wkNGFEw-TU6YW5VTQwlegwHaE8?rs=1&pid=ImgDetMain" alt="Image" width="100%" /></picture>
+          </div>
+    
+          <div class="etapas">
+            <h3>Doce gelado de coco</h3>
+            <picture><img src="https://receitason.com/wp-content/uploads/2022/09/bolo-de-coco-gelado.png" alt="Image" width="100%" /></picture>
+          </div>
+    
+          <div class="etapas">
+            <h3>Pavê de morango</h3>
+            <picture><img src="https://th.bing.com/th/id/OIP.Wb2OOmJJXKemjq1C36UodQHaFj?rs=1&pid=ImgDetMain" alt="Image" width="100%" /></picture>
+          </div>
+        </article>
+      </section>
+      <section id="recomendacao">
         <h2>Sujestões do chef</h2>
         <p>Comidas com sabores e temperos irresitiveis</p>
-        <article class="grid">
-          <div class="feature">
-            <img src="https://img.freepik.com/vector-premium/comida-tradicional-brasilena-moqueca-ilustracion-vectorial-estilo-dibujado-mano_529344-2075.jpg?w=2000" alt="Feature 1" width="100%" />
+        <article id="final">
+          <div class="receitas">
+            <picture><img src="https://img.freepik.com/vector-premium/comida-tradicional-brasilena-moqueca-ilustracion-vectorial-estilo-dibujado-mano_529344-2075.jpg?w=2000" alt="etapas 1" width="100%" /></picture>
             <h3>Moqueca Baiana</h3>
             <p>A Moqueca Baiana é caracterizada pelo uso de azeite de dendê e leite de coco, resultando em um prato rico e saboroso. Essa receita tem uma forte influência africana</p>
           </div>
-          <div class="feature">
-            <img src="https://th.bing.com/th/id/OIP.2RBNf5KzWhuHRFMyysWM5QHaHa?w=740&h=740&rs=1&pid=ImgDetMain" alt="Feature 2" width="100%"/>
+          <div class="receitas">
+            <picture><img src="https://th.bing.com/th/id/OIP.2RBNf5KzWhuHRFMyysWM5QHaHa?w=740&h=740&rs=1&pid=ImgDetMain" alt="etapas 2" width="100%"/></picture>
             <h3>Tacacá</h3>
             <p>O Tacacá é uma deliciosa iguaria da culinária paraense, feito com tucupi, goma de mandioca, camarões e jambu, que resulta em um caldo quente e saboroso.</p>
           </div>
-          <div class="feature">
-            <img src="https://th.bing.com/th/id/OIP.AhUUiQslQTX5wZyOueUkdQHaHa?w=2000&h=2000&rs=1&pid=ImgDetMain" alt="Feature 3" width="100%"/>
+          <div class="receitas">
+            <picture><img src="https://th.bing.com/th/id/OIP.AhUUiQslQTX5wZyOueUkdQHaHa?w=2000&h=2000&rs=1&pid=ImgDetMain" alt="etapas 3" width="100%"/></picture>
             <h3>Moqueca Capixaba</h3>
             <p>A Moqueca Capixaba, originária do estado do Espírito Santo, é mais leve e reflete as influências indígenas e portuguesas. Ao contrário da versão baiana, utiliza azeite de oliva e urucum para dar cor e sabor ao prato.</p>
           </div>
         </article>
       </section>
-  </main>
+    </main>
     <footer>
       <p>Coelho's Recipe</p>
       <p>Copyright © 2025 - Todos os direitos reservados.</p>
       <nav>
         <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="#" target="_parent" rel="previous" >Menu</a></li>
+          <li><a href="#" target="_blank" rel="external" >GitHub</a></li>
         </ul>
       </nav>
     </footer>
