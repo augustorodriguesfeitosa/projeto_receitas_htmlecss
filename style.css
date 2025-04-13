@@ -94,7 +94,7 @@ nav > ul > li > a {
     color: var(--principal); 
     transition: all 1s ease-out;
 }
-a>span{
+li>span{
     font-family: var(--monospace);
     color: snow;
     font-weight: 600;
@@ -106,9 +106,8 @@ a:hover{
     text-underline-offset: 5px;
     cursor: pointer;
 }
-a>span:hover{
+li>span:hover{
     color: var(--red);
-    text-decoration: underline var(--principal);
 }
 #hero{
     height: 400px;
@@ -117,7 +116,7 @@ a>span:hover{
     font-size: 2.1em;
     padding: 6em 3em 3em 4em;
     display: flex;
-    justify-content: space-aro;
+    justify-content: space-between;
     background: snow;
     background-image: linear-gradient(var(--preto) 20%,var(--red));
     min-height: 300px;
@@ -127,6 +126,9 @@ a>span:hover{
     background-size: cover;
 }
 
+h1{
+    text-shadow: 2px 2px 25px #1a1a1a;
+}
 h1>span{
     font-family: "Bold";
     color: var(--principal);
@@ -151,11 +153,106 @@ button{
     padding: 10px;
     font:  600 0.4em "Light" ;
     color: snow;
+    box-shadow: 1px 1px 80px #1a1a1a;
+
 }
 #inicial{
-    filter: drop-shadow(0 0 0.75rem var(--red));
+    filter: drop-shadow(0 0 0.75rem var(--principal));
     position: absolute;
     left: 50%;
     top: 30%;
     z-index: 1;
+}
+
+#ingredientes{
+    padding: 150px 0px 0px 0px;
+    text-align: center;
+    background-color: #cccccc;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#conteudo{
+    border: var(--principal) solid 2px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 40%;
+    margin: auto;
+    background-color: #1a1a1a;
+    color: var(--principal);
+    backdrop-filter: blur(7px);
+    box-shadow: 1px 1px 100px 0px #1a1a1a93;
+    transition: 1s
+}
+#conteudo:hover{
+    width: 30%;
+    color: snow;
+    background-color: var(--laranja) ;
+    cursor: pointer;
+    border-color: snow;
+}
+#conteudo>h2{
+    padding: 10px;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: "Monospace";
+}
+hr{
+    border: 2px solid snow;
+    border-radius: 20px;
+    margin: 20px;
+}
+#ul{
+    list-style: none;
+    width: 80%;
+    font-family: "Monospace";
+    font-weight: 300;
+}
+#ul>li::before{
+    content: "ᧈ ";
+}
+.grid { 
+    padding: 40px 20px;
+    display: grid; 
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px; 
+}
+.grid>aside{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.etapas {
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    background: #eef2f5; 
+    padding: 20px; 
+    border-radius: 8px; 
+}
+preparo{
+    background-color: #1a1a1a;
+}
+#recomendacao>aside{
+    background-color: #EB2700;
+    font-family: "Monospace";
+    font-size: 1em;
+    padding: 30px;
+    border: 1px solid var(--preto);
+    text-align: center;
+}
+footer{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    font-size: 14px; 
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+#copyright{
+    color: #E6B438;
 }
