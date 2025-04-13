@@ -88,7 +88,7 @@ nav > ul {
     font-family: var(--font);
     text-shadow: 2px 0px 10px #1a1a1a;
 }
-nav > ul > li > a { 
+a { 
     font-family: "SemiBold";
     text-decoration: none; 
     color: var(--principal); 
@@ -126,9 +126,7 @@ li>span:hover{
     background-size: cover;
 }
 
-h1{
-    text-shadow: 2px 2px 25px #1a1a1a;
-}
+
 h1>span{
     font-family: "Bold";
     color: var(--principal);
@@ -153,7 +151,7 @@ button{
     padding: 10px;
     font:  600 0.4em "Light" ;
     color: snow;
-    box-shadow: 1px 1px 80px #1a1a1a;
+    box-shadow: 1px 1px 80px #1a1a1a85;
 
 }
 #inicial{
@@ -178,7 +176,7 @@ button{
     border: var(--principal) solid 2px;
     border-radius: 10px;
     padding: 30px;
-    width: 40%;
+    width: 35%;
     margin: auto;
     background-color: #1a1a1a;
     color: var(--principal);
@@ -214,35 +212,88 @@ hr{
     content: "ᧈ ";
 }
 .grid { 
-    padding: 40px 20px;
     display: grid; 
-    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr)); 
+    gap: 20px; 
+    object-fit: cover;
+    padding: 20px;
+
 }
-.grid>aside{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.grid1 {
+    background-image: url(images/mesh-gradient.png);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;;
+    padding: 20px;
 }
-.etapas {
-    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    background: #eef2f5; 
-    padding: 20px; 
+   
+aside>img{
+    border-radius: 10px;
+}
+.grid1>div {
+    border: 1px solid var(--preto);
+    background: var(--preto); 
+    gap:-10px;
     border-radius: 8px; 
+    transition: 1s;
+
 }
-preparo{
-    background-color: #1a1a1a;
+article>div:hover{
+    background: transparent;
+    backdrop-filter: blur(10px);    
+    transition: 0.3s;
+}
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Bold";
+    color: #DE813C;
+} 
+
+.div1 { grid-area: 1 / 1 / 3 / 3; }
+.div2 { grid-area: 1 / 4 / 2 / 5; }
+.div3 { grid-area: 2 / 4 / 3 / 5; }
+.div4 { grid-area: 1 / 3 / 2 / 4; }
+.div5 { grid-area: 2 / 3 / 3 / 4; }
+
+#recomendacao{
+     background: #222; 
+     color: var(--amarelo); 
 }
 #recomendacao>aside{
+    color: #1a1a1a;
     background-color: #EB2700;
     font-family: "Monospace";
     font-size: 1em;
     padding: 30px;
     border: 1px solid var(--preto);
     text-align: center;
+}
+#reco{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px; 
+    padding: 40px;
+}
+.receitas{
+    border: snow solid 1px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: transparent;
+    font-family: var(--monospace);
+    text-align: center;
+    backdrop-filter: blur(7px);    
+    transition: 0.3s;
+}
+h3>a{
+    color: #E6B438;
+}
+.receitas:hover{
+    cursor: pointer;
+    transform: translateY(-20px)
 }
 footer{
     display: flex; 
