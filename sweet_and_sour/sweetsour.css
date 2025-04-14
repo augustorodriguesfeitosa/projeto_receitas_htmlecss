@@ -237,10 +237,7 @@ aside>img{
     gap:-10px;
     border-radius: 8px; 
 }
-.grid1>div:hover{
-    background: transparent;
-    backdrop-filter: blur(10px);    
-}
+
 .grid1>div>p{
     width: 100%;
     display: flex;
