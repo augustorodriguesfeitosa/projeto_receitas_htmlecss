@@ -163,9 +163,9 @@ button{
 }
 
 #ingredientes{
+    background-image: radial-gradient(circle,var(--preto),var(--secundaria));
     padding: 150px 0px 0px 0px;
     text-align: center;
-    background-color: snow;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -232,17 +232,27 @@ aside>img{
     border-radius: 10px;
 }
 .grid1>div {
-    border: 1px solid var(--preto);
-    background: var(--preto); 
+    background-image: radial-gradient(circle,var(--preto),var(--secundaria));
+    border: 1px solid var(--contraste);
     gap:-10px;
     border-radius: 8px; 
-    transition: 1s;
-
 }
-article>div:hover{
+.grid1>div:hover{
     background: transparent;
     backdrop-filter: blur(10px);    
-    transition: 0.3s;
+}
+.grid1>div>p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "SemiBold", sans-serif;
+    color: var(--contraste);    
+}
+.grid1>div>h3{
+    text-underline-offset: 5px;
+    text-decoration: underline;
 }
 h3{
     display: flex;
@@ -263,7 +273,7 @@ h3{
      background: #222; 
      color: var(--outro); 
 }
-#recomendacao>aside{
+.separador{
     color: #1a1a1a;
     background-color: var(--secundaria);
     font-family: "Monospace";

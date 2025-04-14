@@ -47,10 +47,10 @@
   
 :root{
     --preto: #1a1a1a;
-    --principal: #B1288C;
-    --secundaria: #6B28B0;
-    --contraste: #C48C84;
-    --outro: #863571;
+    --principal: #A9CA3A;
+    --secundaria: #C2F41E;
+    --contraste: #474B3B;
+    --outro: #6B7549;
     --monospace: "Monospace", monospace;
     --font: "Regular", "Medium", sans-serif;
 
@@ -166,7 +166,6 @@ button{
     background-image: radial-gradient(circle,var(--preto),var(--secundaria));
     padding: 150px 0px 0px 0px;
     text-align: center;
-    background-color: snow;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -221,7 +220,7 @@ hr{
 
 }
 .grid1 {
-    background-image: url(/images/mesh-gradient\ \(2\).png);
+    background-image: url(/images/mesh-gradient\ \(3\).png);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
