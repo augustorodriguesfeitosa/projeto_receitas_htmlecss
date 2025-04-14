@@ -143,17 +143,6 @@ div>p{
 p>span{
     text-decoration: underline;
 }
-button{
-    margin-top: 5%;
-    background-color: var(--principal);
-    border: var(--principal) solid 3px;
-    border-radius: 20px;
-    padding: 10px;
-    font:  600 0.4em "Light" ;
-    color: snow;
-    box-shadow: 1px 1px 80px #1a1a1a85;
-
-}
 #inicial{
     filter: drop-shadow(0 0 0.75rem var(--principal));
     position: absolute;
