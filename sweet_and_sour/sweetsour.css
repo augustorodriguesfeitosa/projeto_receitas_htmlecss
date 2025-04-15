@@ -186,10 +186,7 @@ button{
 }
 #conteudo:hover{
     width: 30%;
-    color: snow;
-    background-color: var(--contraste) ;
     cursor: pointer;
-    border-color: snow;
 }
 #conteudo>h2{
     padding: 10px;
@@ -232,7 +229,7 @@ aside>img{
     border-radius: 10px;
 }
 .grid1>div {
-    background-image: radial-gradient(circle,var(--preto),var(--secundaria));
+    background-color: var(--secundaria);
     border: 1px solid var(--contraste);
     gap:-10px;
     border-radius: 8px; 
